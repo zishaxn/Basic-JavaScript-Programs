@@ -6,10 +6,14 @@ Each program focuses on specific concepts and features of JavaScript while provi
 
 ## Programs
 
-### 1. Catch Me Program
-A simple web page featuring a ball-shaped element at the center. As you hover over the ball, it moves randomly within the viewport. 
-This example demonstrates mouse event handling and manipulating element positions dynamically.
+### 1. move-ball
+A simple web page featuring a ball-shaped element at the center. This program has the most basic function: to move an element on the viewport. In this case, a ball that should stay within the viewport's height and width.
 
+### 2. Counter-2
+This program prompts the user to input a number between 1 and 99999. After entering the number, a countdown timer starts, displaying the remaining time in seconds. This exercise covers input validation, interval-based operations, and updating the DOM.
+
+### 3. Change-color-shape
+This program demonstrates how to change the styling properties of an element, such as color and shape, using JavaScript. Here, we have used the built-in random function of JavaScript to generate random colors.
 
 ## Usage
 Each program is contained in its own directory, complete with HTML, CSS, and JavaScript files. 
