@@ -1,7 +1,0 @@
-JS:
-1) variables for inputDisplay, timerStartButton,outputDisplay
-2) eventListener on startButton-->click
-    --> fetch input number inputDisplay using built in methods.
-    call function startCounter with parameeter input number.
-
-3) function startCounter:
