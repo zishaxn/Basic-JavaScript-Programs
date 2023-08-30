@@ -1,0 +1,24 @@
+1) variable for ball, ball steps and ball size.
+2) viewport height and width
+3) random x and y (VP-ballSize)
+4) set ball position
+
+----
+5) function for move-ball
+	I)  set x / y i.e (x/y)+direction*steps.
+		parameteres(directionX,directionY)
+		--> we need somethings to know, which axis we have to move and that too forward or backward.
+		--> so we will use (1 for forward and -1 for backward)
+		--> and at one point ball will move either horizontally or vertically so either pf them
+			will always be zero.  Eg. move upwards(x:0,y:-1)
+			now when we multiply -1 to steps we will have -3 that when added with current position it will reduce the pixel 
+			with 30units.
+	II) check if goes beyond veiwport.
+	III) set position according to x/y.
+----
+
+6)event listener on document--> kepress
+	--> take event as parameter
+	--> switch--event.key
+	-->cases-up,down,left,right.
+		
