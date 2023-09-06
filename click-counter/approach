@@ -1,0 +1,10 @@
+HTML:
+simple a div-->>div-->button--text.
+CSS:
+simple .
+
+
+JS:
+1) variable for button(click), variable for counter.
+2) variable for actualy click counts(initially 0);
+3)eventlistener on button--> click,clickCount++,update counter(innerHTML)=clickCount.

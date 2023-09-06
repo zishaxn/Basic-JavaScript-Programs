@@ -1,0 +1,60 @@
+
+
+
+// JAVASCRIPT //
+
+## Variables::
+    1) an array of objects for storing the task at one place.
+    2) an input variable for for getting input from user , we have input text box, so we'll use that element.
+    3) a task-counter Variables
+    4) a variable for list of task, we have a list , so we'll use that only. 
+
+## Program::
+
+   ** After every operation like adding, deleteing , and marking we have to show notification and render the list.
+    1) first we will add an event listener on input, that will be triggered by keypress, it will get us our task input text.
+        --> that event will have a function:
+            --> this function will get the input from the eventListener and first it will check if pressed key is 'Enter' or not 
+                if it is 'Enter' that means user is done writing and now wants to save the task. so it will have a variable and 
+                it will store the the text received on input box using 'event.target.value'.
+                --> if received input is empty then it will showNotification() that its empty and return.
+                --> otherwise it will create an object:
+                    OBJECT: it will have the text, an id: Date.now().toString() and a property Done as false.
+                --> after create object we will set the input to empty again, and call the addTask function with object as argument.
+    2) addTask function::
+        --> it will take an object(task) as input and add that to the array.            
+
+    3) deleteTask function::
+        --> logic is simple we take a task id(that has to be deleted) as argument, create an array using filter() method, that will 
+            create a new array that will include all arrays elements except the task with given id, and then we can simly replace(copy) 
+            our array with this new Array. 
+    4)markTaskComplete function::
+        -->aim is to mark a given task as done or complete, first we will get our desired task
+           from the tasks array using filter, and store it in array, and from that array extract the variable and using dot operator mark it
+           as done,i.e "currTask.Done = !currTask.Done;"
+
+    5) showNotification function ::
+        --> simply takes a text as input and alerts the text.
+
+    6)handleTaskInput::
+        --> this function will only be called on **keypress eventListener** attached to input variable (*2*),and it is responsible for taking 
+            inputs(text/task) from user then creating an object 'task' with that text, an id and task status 
+            as properties,and then it passes the task object to addTask() function.
+    7)handleClickEvents::
+        --> this function will be called on **click event listner** attached to whole document so that we dont have to write separate eventListener
+            for 'markTaskComplete' then for 'deleteTask'.
+            --> it will call above two functions with appropriate arguments.
+
+
+=>>>Event Listeners:
+    1) addTaskInput.addEventListener('keypress', handleTaskInput);
+    2) document.addEventListener('click', handleClickEvents)
+
+--> we can wrap both this eventListener in one function and then call that function simply.
+        function initializeToDo() {
+    // event that will be triggred when user starts typing.
+    addTaskInput.addEventListener('keypress', handleTaskInput);
+
+    // event listener on whole document, so that we can target desired elements without writing multiple event listener
+    document.addEventListener('click', handleClickEvents)
+}

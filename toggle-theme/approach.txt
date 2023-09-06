@@ -1,0 +1,32 @@
+HTML:
+
+1) main container div.
+2) usually we would have used another div for toggle container but here we will used
+   label with the class as toggle and inside that we will have input checkbox, and slider id in a span.
+   --> the reason for not taking a div again is that, div will not giv as much flexibility aswe want in 
+       this case because it is a toggle button so , using label and then checkbox will save us from
+       writing extra code for toggle and we will have a lot more flexibility.
+
+3) after label we can have text to click on toggle button.
+
+
+CSS:
+
+1) container: make it flex and cloumn wise in center. so that toggle button and text come one below another.
+2) toggle: we have to make its position relative idk. there should not be any other element in that line(use display property)
+           as it is the container for toggle button ,we will set height and width also.
+
+3) we also want a toggle button, not a checkbox so we will hide checkbox
+
+4) now we will use slider class to create a capsule that will serve as our sliding area.its position will be absolute.
+    imp:::::: also use top, left, right,bottom.
+
+5) The .slider:before selector in your CSS code is using the 
+   ::before pseudo-element to create an additional visual element before the .
+   slider element. Pseudo-elements are virtual elements that you can use to style a specific part of an 
+   HTML element without adding extra markup(code) to your HTML structure.
+   --> we will create a sphere shape that will be inside the slider capsule(.slider:before{}) and position should be absolute.
+
+6) now we have to write code so that whenever slider-shape(sphere) is clicked the color of slider should change-
+7) now we have to write code so that whenever slider-shape(sphere) is clicked the shape should move like a toggle button.
+

@@ -1,0 +1,5 @@
+1) a variable to control the shape(box)
+2) a function that will generate random position both horizontally and vertically.
+3) an event listener on variable(1) that will trigger on mouseover.
+
+4) 

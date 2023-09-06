@@ -1,0 +1,59 @@
+body{
+    background-color: lightpink;
+}
+
+/* to center the toggle button and text */
+#container{
+    display: flex;                            /* this will make the container flex*/
+    flex-direction: column;                   /* elements will be in column wise one below other*/
+    align-items: center;                      /* will align content on x-axis*/
+    justify-content: center;                  /* will align content on y-axis*/
+    height: 100vh;                            /*container height will be 100% so it will be properly centered*/      
+    /* border: 1px solid black;  test */
+}
+/* The container */
+.toggle {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 34px;
+}
+
+/* Hide the checkbox input */
+.toggle input {
+    display: none;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+}
+
+/* Change the background color when checked */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s ease-in;
+    border-radius: 50%;
+}
+
+/* Show the slider in a different color when checked */
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(65px);
+}
