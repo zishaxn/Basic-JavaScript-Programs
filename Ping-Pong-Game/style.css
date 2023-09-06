@@ -1,0 +1,86 @@
+/* some common properties */
+body {
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+/* this is the main container, everyting is inside this only */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+    /* background-color: blue; */
+}
+
+/******************************************************/
+
+/* Upper section --> score and heading */
+.top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.heading {
+    text-align: center;
+    color: red;
+    font-size: 25px;
+}
+
+/***********************************************************/
+
+/* this is the section where balls and rod and game is going to be. */
+.play-area {
+    background-color: lightcoral;
+    height: 70%;
+    width: 100%;
+    margin: 0;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* position: fixed; */
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+/* structuring the rod properties */
+
+.rod {
+    background-color: green;
+    width: 10%;
+    height: 20px;
+    position: relative;
+    left: 45%;
+    border-radius: 34px;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-align: center;
+}
+
+.bottom-rod {
+    background-color: red;
+}
+
+/* Ball */
+.ball {
+    background-color: cyan;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    border: 1px solid black;
+    align-self: center;
+    position: absolute;
+    box-sizing: border-box;
+}
