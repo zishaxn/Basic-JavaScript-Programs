@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.centre{
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+
+    /* setting position absolute means that we are saying that let me position 
+    my element in anyways i want and keep it separate from normal flow of element positioning*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* if we only use then rectangle will start from 50% from top and 50% from left, that means yes 
+    it is in the middle but elements starting points are in middle , and that gives an impression of belowe middle from top and left. */
+    transform: translate(-50%,-50%);  
+    /* above code will move the recatngle 50% of its hieght towards top and 50% of its width towards left and that will make the
+    rectangle align perfectly in centre. */
+    cursor: pointer;
+}
+
+
+
+.container{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    text-align: center;
+    justify-content: space-between;
+}
+h1{
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+p{
+    font-size: 20px;
+}

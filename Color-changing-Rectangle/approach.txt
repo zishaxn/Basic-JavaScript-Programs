@@ -1,0 +1,13 @@
+Expected:
+    A rectangle in which if we move towards the left edge from its centre, the color get more and more red,
+    and similarly when we move towards right it becomes blue, at both extremes it should be pitch red and pitch blue respectively.
+    and near the centre it should be lighter shades.
+
+HTML:
+    --> a div that will serve as rectangle.
+CSS:
+    -->centre the rectangle on the middle of the web page;
+JS:
+    1) First check if mouse is inside the rectangle or not
+    2) if it is then check if its in left or right from centre
+    3) and according to how far it is from centre on both extremes , set the intenisty of colors.
